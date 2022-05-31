@@ -11,33 +11,298 @@
     <title>Alles Nano</title>
 </head>
 
-<body>
-    <header class="masthead">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-12 text-center">
-                    <!-- <h1 class="fw-light">Vertically Centered Masthead Content</h1>
-                    <p class="lead">A great starter layout for a landing page</p> -->
+<body id="Pagina">
+    <header>
+        <!--menu de navegação-->
+
+        <nav id="Navegador" class="active fixed-top navbar navbar-expand-xl navbar-dark bg-dark">
+            <div class="container px-4">
+                <a href="#Pagina" title="Vá para o topo da página" class="navbar-brand navbar-brand-destaque">Volte ao
+                    topo</a>
+                <!--As duas próximas linhas são responsáveis pela responsividade do menu-->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+                    aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="justify-content-end navbar-nav ms-auto">
+                        <li class="nav-item"><a href="#" class="nav-link"
+                                title="Para ativar o auto contraste utilize as teclas Alt e 3 juntas" accesskey="3"
+                                onclick="window.toggleContrast()">
+                                Alto Contraste[Alt+3]</a>
+                        </li>
+                        <li class="nav-item"><a title="volte para a página de login" href="{{route('telaDeLogin')}}"
+                                class="nav-link">Página de Login</a></li>
+                        <li class="nav-item"><a title="Nossos objetivos" href="#Sobre" class="nav-link">Sobre o
+                                Psiquê</a></li>
+                        <li class="nav-item"><a title="O que é a pesquisa" href="#Pesquisa" class="nav-link">Nossa
+                                pesquisa</a></li>
+                        <li class="nav-item"><a title="Como seus dados serão usados" href="#Dados" class="nav-link">Como
+                                seus dados serão usados</a></li>
+                        <li class="nav-item"><a title="Entre em contato" href="#Contato" class="nav-link">Fale
+                                conosco</a></li>
+                    </ul>
                 </div>
             </div>
-        </div>
+        </nav>
+        <!--Acaba o nav e começa o banner-->
+
+        <section id="banner" class="secao block pt-5 bg-warning">
+            <div class="container">
+                <!--Cria linha do banner-->
+                <div class="row">
+                    <div class="col-md-6 align-self-center">
+                        <h1 class="text-white display-2 mt-5">Bem Vindo ao Psiquê</h1>
+                        <h2 class="text-white h3">Uma nova forma de buscar ajuda</h2>
+                        <a href="#Sobre" class="mt-2 hover-button text-center btn btn-dark">Saiba Mais
+                            <!--código da seta-->
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-arrow-down" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z" />
+                            </svg>
+                        </a>
+                    </div>
+
+                    <div class="col-md-6 align-self-center text-center">
+                        <img title="Menina se acalmando" class="img-fluid" src="{{url('img/template/Banner.png')}}"
+                            alt="Jovem branca, de cabelos longos e pretos com os olhos fechados, respirando fundo. Acima de sua cabeça, está um cerebro rosa, cartunesco. E ao redor de sua cabeça várias miniaturas de planetas roxos">
+                        <small><a title="Link para a fonte da imagem"
+                                href="https://pt.vecteezy.com/vetor-gratis/mental-health">Mental Health Vetores por
+                                Vecteezy</a></small>
+                    </div>
+                </div>
+            </div>
+        </section>
     </header>
+    <!--Acaba o header-->
 
+    <!--Aqui começa as seções de informações-->
     <main>
+        <!--seção sobre-->
+        <section id="Sobre" class="secao">
+            <div class="container">
+                <div class="row">
+                    <!--Container da imagem-->
+                    <div class="col-md-6 align-self-center text-center mt-5">
+                        <img src="{{url('img/template/Duvida.png')}}"
+                            alt="A imagem traz, duas mulheres com expressão de dúvida. A primeira é branca e ruiva, usa óculos e esta de camiseta verde e calça azul clara. A segunda, é negra, tem cabelo castanho e encaracolado. Ela esta de camiseta de manga longa na cor verde claro. Em volta das duas existem vários pontos de interrogação na cor amarelo"
+                            class="img-fluid">
+                        <small><a title="Link para a fonte da imagem"
+                                href="https://www.freepik.com/vectors/people">People vector created by freepik -
+                                www.freepik.com</a></small>
+                    </div>
+                    <!--Container do texto-->
+                    <div class="col-md-6 align-self-center">
+                        <h2 class="h1 mt-3 subtitulo fw-bold">O que é o Psiquê?</h2>
+                        <p class="fs-4">O Psiquê, é uma aplicação web desenvolvida com o objetivo de auxiliar a SEPAE na
+                            identificação de alunos que necessitam de ajuda profissional. Por meio do SRQ-20 é possível
+                            detectar alunos com indícios de sofrimento psiquico e os contactar oferecendo apoio</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
+        <!--seção sobre a pesquisa usando cards-->
+        <section id="Pesquisa" class="secao">
+            <div class="container pt-5">
+                <h2 class="h1 fw-bold text-center subtitulo mt-3 title">Sobre Nossa Pesquisa</h2>
+                <h3 class="h4 subtitle text-center mb-4">Entenda nossos objetivos e metodos de forma fácil</h3>
 
+                <!--Cards-->
+
+                <div class="row">
+
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <div class="card h-100">
+                            <img src="{{url('img/cards/objetivo.png')}}" class="card-img-top img-fluid"
+                                alt="Imagem de um alvo, no centro dele está um dardo preso. Enquanto isso uma mulher analisa informações em uma planilha">
+                            <div class="card-body">
+                                <h4 class="text-center card-title">Nossos Objetivos</h4>
+                                <p class="card-text">Mapear a incidencia de sofrimento psiquico no IFPR, Campus Assis
+                                    Chateaubriand, e o relacionar com os marcadores sociais de diferença, a fim de
+                                    buscar formas de combater este índice</p>
+                            </div>
+                            <div class="card-footer">
+                                <p class="text-center text-mute"><small>
+                                        <a href="https://br.freepik.com/fotos-vetores-gratis/abstrato">
+                                            Abstrato vetor criado por vectorjuice - br.freepik.com</a>
+                                    </small></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <div class="card h-100">
+                            <img src="{{url('img/cards/sofrimento.png')}}" class="card-img-top img-fluid"
+                                alt="Menino sentado aos pés da cama, se mostrando preocupado">
+                            <div class="card-body">
+                                <h4 class="text-center card-title">O que é sofrimento psiquico</h4>
+                                <p class="card-text">O sofrimento psíquico é um fenômeno que emerge a partir de nossas
+                                    vivências cotidianas. Ele aparece quando vivenciamos expêriencias e por diferentes
+                                    razões, não temos ou não conseguimos acessar recursos que nos possibilitem lidar com
+                                    essa situação apresentada.</p>
+                            </div>
+                            <div class="card-footer">
+                                <p class="text-center text-mute"><small>
+                                        <a href="https://br.freepik.com/fotos-vetores-gratis/olho">Olho vetor criado por
+                                            vectorjuice - br.freepik.com</a>
+                                    </small></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <div class="card h-100">
+                            <img src="{{url('img/cards/Diferença.png')}}" class="card-img-top img-fluid"
+                                alt="A frente do globo terrestre estão pessoas de várias etnias, além disso, existem balões de fala em diferentes linguas">
+                            <div class="card-body">
+                                <h4 class="text-center card-title">Marcadores Sociais de Diferença</h4>
+                                <p class="card-text">É importante levarmos em considerações os marcadores sociais de
+                                    diferença que se interseccionam de maneiras absolutamente singulares produzindo
+                                    diferentes modos de ser, estar e transitar no mundo trazendo privilégios ou
+                                    opressões.</p>
+                            </div>
+                            <div class="card-footer">
+                                <p class="text-center text-mute"><small>
+                                        <a href='https://br.freepik.com/fotos-vetores-gratis/desenho-animado'>Desenho
+                                            animado vetor criado por vectorjuice - br.freepik.com</a></small></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <div class="card h-100">
+                            <img src="{{url('img/cards/Vantagens.png')}}" class="card-img-top img-fluid"
+                                alt="Um balão de fala com um ponto de interrogação saindo de um mega-fone">
+                            <div class="card-body">
+                                <h4 class="text-center card-title">Vantagens</h4>
+                                <p class="card-text">→ Obter avaliação sobre sofrimento psíquico, com apenas 20
+                                    perguntas de sim ou não;
+
+                                    →Em apenas 5 MINUTOS!!!, é possível se cadastrar e obter o score;
+
+                                    →Pode se sentir mais a vontade em responder;
+
+                                    →Se for identificado o sofrimento mental, a SEPAE poderá entrar em contato com você,
+                                    fornecendo apoio especializado.</p>
+                            </div>
+                            <div class="card-footer">
+                                <p class="text-center text-mute"><small>
+                                        <a href="https://br.freepik.com/fotos-vetores-gratis/abstrato">Abstrato vetor
+                                            criado por vectorjuice - br.freepik.com</a>
+                                    </small></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--fim da row-->
+            </div>
+        </section>
+
+        <!--seção sobre os dados-->
+        <section id="Dados" class="secao">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-md-6 align-self-center">
+                        <h2 class="h1 mt-3 subtitulo fw-bold">Como meus dados serão usados</h2>
+                        <p class="fs-4">→ Os dados presentes na pesquisa não terão nenhum meio de identificação pessoal.
+                            As discussões e análises realizadas focarão o debate sobre as condições de saúde mental da
+                            população pesquisada, sem evidenciar indivíduos específicos.
+                            <br>→ Os dados possibilitarão identificar demandas e grupos que necessitem de ações
+                            específicas e/ou especializadas de atendimento e/ou apoio em saúde mental.
+                            <br>→ A equipe de Psicologia da SEPAE também terá acesso, de maneira sigilosa (respeitando o
+                            código de ética profissional da Psicologia), aos dados e prontuários gerados pela pesquisa.
+                        </p>
+                    </div>
+
+                    <div class="col-md-6 align-self-center text-center mt-5">
+                        <img src="{{url('img/template/Dados.png')}}"
+                            alt="A imagem traz, duas mulheres com expressão de dúvida. A primeira é branca e ruiva, usa óculos e esta de camiseta verde e calça azul clara. A segunda, é negra, tem cabelo castanho e encaracolado. Ela esta de camiseta de manga longa na cor verde claro. Em volta das duas existem vários pontos de interrogação na cor amarelo"
+                            class="img-fluid">
+                        <small><a href="https://br.freepik.com/fotos-vetores-gratis/abstrato">Abstrato vetor criado por
+                                vectorjuice - br.freepik.com</a></small>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--seção contato-->
+        <section id="Contato" class="bg-dark secao">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 align-self-start mt-5">
+                        <form id="form-contato" method="POST" action="{{route('enviaEmailFeedback')}}"
+                            class="mt-2  text-light col-md-10">
+                            @csrf
+                            <fieldset>
+                                <legend class="fs-1 fw-normal mb-2 pb-2">
+                                    <h2 class="h1 fw-bold">Entre em contato</h2>
+                                </legend>
+                                @if(session('status'))
+                                <div role="alert" class="alert alert-success">
+                                    <p>{{session('status')}}</p>
+                                </div>
+                                @endif
+                                <p class="fs-4 mb-2">Nos mande suas dúvidas e sugestões. Responderemos o mais rápido
+                                    possível.</p>
+
+                                <div class="form-outline mb-3 col-md-9">
+                                    <label class="form-label" for="NomeContato">Informe seu Nome</label>
+                                    <input title="Informe seu nome" type="text" id="NomeContato" name="NomeContato"
+                                        placeholder="Seu nome" class="form-control form-control-md">
+                                </div>
+
+                                <div class="form-outline mb-3 col-md-9">
+                                    <label class="form-label" for="EmailContato">Informe seu Email</label>
+                                    <input title="Informe seu email" type="email" id="EmailContato" name="EmailContato"
+                                        placeholder="Email" class="form-control form-control-md">
+                                </div>
+
+                                <div class="form-outline mb-3 col-md-9">
+                                    <label class="form-label" for="AssuntoContato">Escolha o assunto do email</label>
+                                    <select name="AssuntoDoEmail" id="AssuntoContato"
+                                        class="form-select form-select-md">
+                                        <option selected>Assuntos</option>
+                                        <option value="Duvida">Tenho uma dúvida</option>
+                                        <option value="Sugestão">Tenho uma sugestão</option>
+                                    </select>
+                                </div>
+
+                                <div class="form-outline mb-3 col-md-9">
+                                    <label class="form-label" for="MsgContato">Digite Sua Mensagem</label>
+                                    <textarea name="msgContato" class="form-control" id="MsgContato"
+                                        rows="5"></textarea>
+                                </div>
+
+                                <div class="pt-1 mb-4">
+                                    <button title="Enviar Mensagem" class="btn btn-warning btn-lg btn-block"
+                                        type="submit">Enviar</button>
+                                </div>
+
+                            </fieldset>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Fim da seção contato--->
     </main>
 
 
 
-    <footer id="sticky-footer" class="border-top flex-shrink-0 py-4 bg-danger text-dark-50" style="bottom: 0;">
+
+
+
+    <footer id="sticky-footer" class="border-top flex-shrink-0 py-4 bg-dark text-white-50" style="bottom: 0;">
         <div class="container text-center">
-            <small>Copyright &copy; Alles Nano 2022</small>
+            <small>Copyright &copy; Vinicius Picheidt</small>
         </div>
     </footer>
 
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-</body>
 
+
+</body>
 
 </html>
