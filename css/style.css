@@ -1,0 +1,66 @@
+/*padroniza os links de navegação*/
+.nav-link, .navbar-brand{
+    border-bottom: solid 4px transparent;
+}
+
+.nav-link:hover, .navbar-brand-destaque:hover, .nav-link:focus, .navbar-brand:focus{
+    border-bottom: solid 4px #fec107;
+    color: #fec107 !important;
+}
+
+/*para os link em fundo laranja*/
+
+.nav-link-dark:hover, .nav-link-dark:focus{
+    background-color: #212429;
+    color: rgba(255, 255, 255, 0.938) !important;
+}
+
+.hover-button:hover, .hover-button:focus{
+    color: #fec107;
+}
+
+.subtitulo{
+    text-decoration: underline #fec107 4px;
+}
+
+.secao{
+    min-height: 100vh;
+}
+
+#Navegador.active{
+    box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.2);
+    z-index: 9999;
+}
+
+/*Animação dos cards*/
+
+.card{
+    background: #f0f0f0;
+    border-radius: 5px;
+    transition: All ease-out 0.2s;
+}
+
+.card:hover{
+    background: #ffffff;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.12);
+    transform: scale(1.02);
+}
+
+/* configurando campos de números*/
+input[type=number]::-webkit-inner-spin-button { 
+    -webkit-appearance: none;
+    
+}
+input[type=number] { 
+   -moz-appearance: textfield;
+   appearance: textfield;
+
+}
+/*escondendo partes do site*/
+#apagado, #descriReligiao, #descriOrientacao, #FiltroHiddenTipo, #FiltroHidden{
+    display: none;
+}
+
+.dashboardUser{
+    height: 90vh;
+}
