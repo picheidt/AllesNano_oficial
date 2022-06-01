@@ -227,16 +227,12 @@
                     <div class="col-md-12 align-self-start mt-5">
                         <form id="form-contato" method="POST" action="{{route('enviaEmailFeedback')}}"
                             class="mt-2  text-light col-md-10">
-                            @csrf
+                           
                             <fieldset>
                                 <legend class="fs-1 fw-normal mb-2 pb-2">
                                     <h2 class="h1 fw-bold">Entre em contato</h2>
                                 </legend>
-                                @if(session('status'))
-                                <div role="alert" class="alert alert-success">
-                                    <p>{{session('status')}}</p>
-                                </div>
-                                @endif
+                                
                                 <p class="fs-4 mb-2">Nos mande suas dúvidas e sugestões. Responderemos o mais rápido
                                     possível.</p>
 
