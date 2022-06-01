@@ -1,4 +1,8 @@
 /*padroniza os links de navegação*/
+#banner{
+    background-color: #FDFFCE;
+}
+
 .nav-link, .navbar-brand{
     border-bottom: solid 4px transparent;
 }
