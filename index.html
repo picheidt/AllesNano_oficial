@@ -15,7 +15,7 @@
     <header>
         <!--menu de navegação-->
 
-        <nav id="Navegador" class="active fixed-top navbar navbar-expand-xl navbar-dark bg-dark">
+        <nav id="Navegador" class="active fixed-top navbar navbar-expand-xl navbar-dark">
             <div class="container px-4">
                 <a href="#Pagina" title="Vá para o topo da página" class="navbar-brand navbar-brand-destaque">Volte ao
                     topo</a>
@@ -37,11 +37,15 @@
 
         <section id="banner" class="secao block pt-5">
             <div class="container">
+                <div class="backcircle"></div>
+                <div class="col-md-16 align-self-center text-center mt-5 pt-5">
+                    <img id="imagemteste" class="img-fluid" src="img/Design_sem_nome__1_-removebg-preview.png">
+                </div>
                 <!--Cria linha do banner-->
                 <div class="row mt-5 pt-5">
-                    <div class="col-md-6 align-self-center mt-5 pt-5">
-                        <h1 class="text-dark display-2 mt-5">Alles Nano</h1>
-                        <h2 class="text-dark h3">Nanotecnologia Para a Vida</h2>
+                    <div id="allesnano" class="col-md-6 align-self-center pt-5">
+                        <h1 class="display-2 mt-5">Alles Nano</h1>
+                        <h2 class="text-white h3">Nanotecnologia Para a Vida</h2>
                         <a href="#Sobre" class="mt-2 hover-button text-center btn btn-dark">Saiba Mais
                             <!--código da seta-->
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
@@ -50,10 +54,6 @@
                                     d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z" />
                             </svg>
                         </a>
-                    </div>
-
-                    <div class="col-md-6 align-self-center text-center mt-5 pt-5">
-                        <img class="img-fluid" src="img/logo_sem_nome.png">
                     </div>
                 </div>
             </div>
@@ -75,7 +75,7 @@
                     <!--Container do texto-->
                     <div class="col-md-6 align-self-center">
                         <h2 class="h1 mt-3 subtitulo fw-bold">Quem Somos?</h2>
-                        <p class="fs-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                        <p id="testeletra" class="fs-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
                             Explicabo modi officiis nihil dolore vel unde quaerat itaque, placeat
                             eveniet aperiam optio, nostrum laudantium, eligendi voluptate impedit 
                             fugiat id? Eveniet, maxime.</p>
