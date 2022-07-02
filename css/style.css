@@ -131,3 +131,15 @@ input[type=number] {
     margin-top: 180px;
     height: 260px;
 }
+
+#AlinhamentoTitulos{
+    text-align: center;
+}
+
+#testeletra{
+    text-align: center;
+}
+
+#divBorda{
+    border: 4px solid #142c4c;
+}
