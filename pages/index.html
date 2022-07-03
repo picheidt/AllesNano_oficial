@@ -58,7 +58,7 @@
                         </a>
                     </div>
 
-                    <div class="col-md-6 align-self-center text-center d-none d-sm-block">
+                    <div class="col-md-6 align-self-center text-center d-none d-md-block">
                         <img id="imagemteste" src="../img/Design_sem_nome__1_-removebg-preview.png" alt=""
                             class="img-fluid">
                     </div>
@@ -73,8 +73,8 @@
     <!--Aqui começa as seções de informações-->
     <main>
         <!--seção sobre-->
-        <section id="Sobre" class="secao">
-            <div class="container d-flex align-items-center">
+        <section id="Sobre" class="secao d-flex align-items-center">
+            <div class="container">
                 <div class="row">
                     <!--Container da imagem-->
                     <div class="col-md-6 align-self-center text-center mt-5">
@@ -95,9 +95,9 @@
             </div>
         </section>
 
-        <section id="Missao" class="secao">
+        <section id="Missao" class="secao d-flex align-items-center">
             <div class="container">
-                <div class="row d-flex align-items-center">
+                <div class="row">
                     <!--Container da imagem-->
                     <div class="col-md-6 align-self-center">
                         <h2 class="h1 mt-3 subtitulo fw-bold AlinhamentoTitulos">Missão</h2>
@@ -272,13 +272,9 @@
                                 </div>
 
                                 <div class="form-outline mb-3 col-md-9">
-                                    <label class="form-label" for="AssuntoContato">Escolha o assunto do email</label>
-                                    <select name="AssuntoDoEmail" id="AssuntoContato"
-                                        class="form-select form-select-md">
-                                        <option selected>Assuntos</option>
-                                        <option value="Duvida">Tenho uma dúvida</option>
-                                        <option value="Sugestão">Tenho uma sugestão</option>
-                                    </select>
+                                    <label class="form-label" for="AssuntoContato">Informe o assunto do email</label>
+                                    <input title="Informe o Assunto do email" type="text" id="AssuntoDoEmail" name="AssuntoDoEmail" 
+                                        placeholder="Assunto" class="form-control form-control-md">
                                 </div>
 
                                 <div class="form-outline mb-3 col-md-9">
