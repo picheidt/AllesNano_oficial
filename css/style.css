@@ -9,8 +9,8 @@
 }
 
 .nav-link:hover, .navbar-brand-destaque:hover, .nav-link:focus, .navbar-brand:focus{
-    border-bottom: solid 4px #fec107;
-    color: #fec107 !important;
+    border-bottom: solid 4px #FF8D00;
+    color: #FF8D00 !important;
 }
 
 /*para os link em fundo laranja*/
@@ -21,11 +21,11 @@
 }
 
 .hover-button:hover, .hover-button:focus{
-    color: #fec107;
+    color: #FF8D00;
 }
 
 .subtitulo{
-    text-decoration: underline #fec107 4px;
+    text-decoration: underline #FF8D00 4px;
 }
 
 .secao{
@@ -75,7 +75,7 @@
 }
 
 .divisor{
-    border-bottom: 2px solid #fec107;
+    border-bottom: 2px solid #FF8D00;
 
 }
 
