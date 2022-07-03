@@ -77,12 +77,7 @@ input[type=number] {
 #imagemteste{
     width: 175px;
     height: 175px;
-    display: inline-block;
-    line-height: 250px;
     border-radius: 150px;
-    margin-top: 100px;
-    margin-left: 600px;
-
 }
 
 #imagemteste:hover{
@@ -100,10 +95,10 @@ input[type=number] {
     margin-top: 170px;
 }
 
-#allesnano{
+/* #allesnano{
     margin-top: -248px;
     margin-left: 20px;
-}
+} */
 
 #AlinhamentoMissao{
     margin-top: 200px;
@@ -138,4 +133,9 @@ input[type=number] {
 
 #testeletra{
     text-align: center;
+}
+
+.divisor{
+    border-bottom: 2px solid #fec107;
+
 }
