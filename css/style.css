@@ -28,7 +28,7 @@
 }
 
 .secao{
-    min-height: 100vh;
+    min-height: 90vh;
 }
 
 #Navegador.active{
@@ -52,24 +52,6 @@
 }
 
 /* configurando campos de números*/
-input[type=number]::-webkit-inner-spin-button { 
-    -webkit-appearance: none;
-    
-}
-input[type=number] { 
-   -moz-appearance: textfield;
-   appearance: textfield;
-
-}
-/*escondendo partes do site*/
-#apagado, #descriReligiao, #descriOrientacao, #FiltroHiddenTipo, #FiltroHidden{
-    display: none;
-}
-
-.dashboardUser{
-    height: 90vh;
-}
-
 #Fale, #sticky-footer {
     background-color: #020c1b;
 }
@@ -86,52 +68,8 @@ input[type=number] {
     background: rgb(255, 232, 183);
     box-shadow: 0 0 10px rgb(255, 232, 183), 0 0 40px rgb(255, 232, 183), 0 0 80px rgb(255, 232, 183);
 }
-
-#AlinhamentoQuemSomos{
-    margin-top: 200px;
-}
-
-#quemsomosimg{
-    margin-top: 170px;
-}
-
-/* #allesnano{
-    margin-top: -248px;
-    margin-left: 20px;
-} */
-
-#AlinhamentoMissao{
-    margin-top: 200px;
-}
-
-#imgmissao{
-    margin-top: 200px;
-    height: 280px;
-}
-
-#AlinhamentoVisao{
-    margin-top: 200px;
-}
-
-#imgvisao{
-    margin-top: 170px;
-    height: 280px;
-}
-
-#AlinhamentoValores{
-    margin-top: 200px;
-}
-
-#imgvalores{
-    margin-top: 180px;
-    height: 260px;
-}
-
-#AlinhamentoTitulos{
-    text-align: center;
-}
-
-#testeletra{
+ 
+.AlinhamentoTitulos, .textos{
     text-align: center;
 }
 
