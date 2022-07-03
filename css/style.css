@@ -1,6 +1,7 @@
 /*padroniza os links de navegação*/
 #banner{
     background-color: #13294b;
+    min-height: 100vh;
 }
 
 .nav-link, .navbar-brand{
