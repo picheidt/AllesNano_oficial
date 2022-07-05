@@ -1,38 +1,44 @@
 /*padroniza os links de navegação*/
-#banner{
+#banner {
     background-color: #13294b;
     min-height: 100vh;
 }
 
-.nav-link, .navbar-brand{
+.nav-link,
+.navbar-brand {
     border-bottom: solid 4px transparent;
 }
 
-.nav-link:hover, .navbar-brand-destaque:hover, .nav-link:focus, .navbar-brand:focus{
+.nav-link:hover,
+.navbar-brand-destaque:hover,
+.nav-link:focus,
+.navbar-brand:focus {
     border-bottom: solid 4px #FF8D00;
     color: #FF8D00 !important;
 }
 
 /*para os link em fundo laranja*/
 
-.nav-link-dark:hover, .nav-link-dark:focus{
+.nav-link-dark:hover,
+.nav-link-dark:focus {
     background-color: #212429;
     color: rgba(255, 255, 255, 0.938) !important;
 }
 
-.hover-button:hover, .hover-button:focus{
+.hover-button:hover,
+.hover-button:focus {
     color: #FF8D00;
 }
 
-.subtitulo{
+.subtitulo {
     text-decoration: underline #FF8D00 4px;
 }
 
-.secao{
+.secao {
     min-height: 90vh;
 }
 
-#Navegador.active{
+#Navegador.active {
     box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.493);
     z-index: 9999;
     background-color: #020c1b;
@@ -40,53 +46,70 @@
 
 /*Animação dos cards*/
 
-.card{
+.card {
     background: #f0f0f0;
     border-radius: 5px;
     transition: All ease-out 0.2s;
 }
 
-.card:hover{
+.card:hover {
     background: #ffffff;
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.12);
     transform: scale(1.02);
 }
 
-#Fale, #sticky-footer {
+#Fale,
+#sticky-footer {
     background-color: #020c1b;
 }
 
-#imagemBanner{
+#imagemBanner {
     width: 175px;
     height: 175px;
     border-radius: 150px;
 }
 
-#imagemBanner:hover{
+#imagemBanner:hover {
     transition: 1s;
-    color: rgb(255, 232, 183); 
+    color: rgb(255, 232, 183);
     background: rgb(255, 232, 183);
     box-shadow: 0 0 10px rgb(255, 232, 183), 0 0 40px rgb(255, 232, 183), 0 0 80px rgb(255, 232, 183);
 }
- 
-.AlinhamentoTitulos{
+
+.AlinhamentoTitulos {
     text-align: center;
 }
 
-.divisor{
+.divisor {
     border-bottom: 2px solid #FF8D00;
 
 }
 
 
-#AlinhamentoProduto{
+#AlinhamentoProduto {
     max-width: 100%;
     max-height: 100%;
     margin-top: 100px;
 }
 
-.cat{
+.cat {
     height: 500px;
     width: 750px;
     margin-inline: -130px;
+}
+
+
+#map {
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    height: 0;
+}
+
+#map iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
 }
